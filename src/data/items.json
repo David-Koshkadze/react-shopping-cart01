@@ -22,5 +22,23 @@
     "name": "Car",
     "price": 14000,
     "imgUrl": "/imgs/car.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Porsche",
+    "price": 50000,
+    "imgUrl": "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/1-porsche-911-gt3-2021-rt-hero-front.jpg?itok=xQyVIuwY"
+  },
+  {
+    "id": 6,
+    "name": "Chair",
+    "price": 25,
+    "imgUrl": "https://grandrapidschair.com/wp-content/uploads/2016/01/250_Brady_Graphite_Honey-1-768x1153.jpg"
+  },
+  {
+    "id": 7,
+    "name": "T-Shirt",
+    "price": 18.75,
+    "imgUrl": "https://dictionary.cambridge.org/es-LA/images/thumb/Tshirt_noun_001_18267_2.jpg?version=5.0.244"
   }
 ]
