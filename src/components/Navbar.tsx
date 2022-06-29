@@ -1,12 +1,12 @@
 // import { Container, Navbar as NavbarBs, Nav, Button } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export const Navbar = () => {
   const { openCart, cartQuantity } = useShoppingCart();
 
   return (
-    <nav className="bg-white shadow-sm mb-3">
+    <nav className="bg-white shadow-sm mb-4 px-8 flex items-center gap-6 h-12 [&>a:hover]:text-teal-700">
       <Link to="/">Home</Link>
       <Link to="/store">Store</Link>
       <Link to="/about">About</Link>
