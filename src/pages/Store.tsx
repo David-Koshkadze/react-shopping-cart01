@@ -1,18 +1,15 @@
-import { Row, Col } from "react-bootstrap";
 import storeItems from "../data/items.json";
 import StoreItem from "../components/StoreItem";
 
 export const Store = () => {
   return (
     <>
-      <h1>Store</h1>
-      <Row xs={1} md={2} lg={3}>
+      <h1 className="my-6 text-3xl">Store</h1>
+      <div className="bg-slate-400 grid grid-cols-3 grid-rows-3 gap-8">
         {storeItems.map((item, idx) => (
-          <Col key={idx} className="mb-4">
-            <StoreItem {...item} />
-          </Col>
+          <StoreItem key={idx} {...item} />
         ))}
-      </Row>
+      </div>
     </>
   );
 };

@@ -13,14 +13,14 @@ export default function App() {
   return (
     <ShoppingCartProvider>
       <Navbar />
-      <Container>
+      <div className="w-full px-12">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-      </Container>
+      </div>
     </ShoppingCartProvider>
   );
 }
