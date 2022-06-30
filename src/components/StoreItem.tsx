@@ -19,7 +19,7 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   let quantity = getItemQuantity(id);
 
   return (
-    <div className="border">
+    <div className="rounded shadow-md hover:shadow-lg bg-white">
       <img src={imgUrl} className="h-64 w-full object-cover" />
       <div className="flex flex-col justify-center">
         <div className="flex my-4">
@@ -28,7 +28,7 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         </div>
 
         {quantity === 0 ? (
-          <button className="w-100" onClick={() => increaseCartQuantity(id)}>
+          <button className="px-4 py-2 bg-teal-600" onClick={() => increaseCartQuantity(id)}>
             Add To Cart
           </button>
         ) : (
